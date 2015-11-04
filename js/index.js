@@ -2,22 +2,22 @@ var GIO = G.IO();
 
 window.onload = function() {
 	GIO.init({
-		on: 		function() {
+		on:        function() {
 			console.log('status: on');
 		},
-		off: 		function() {
+		off:       function() {
 			console.log('status: off');
 		},
-		onDetect:	function(joint) {
+		onDetect:  function(joint) {
 			console.log(joint);
 		},
-		onFrame:	function(joint) {
+		onFrame:   function(joint) {
 			console.log(joint);
 		},
-		onGesture:	function(gesture) {
+		onGesture: function(gesture) {
 			console.log(gesture);
 		},
-		onClose:	function() {
+		onClose:   function() {
 			console.log('close');
 		}
 	});
